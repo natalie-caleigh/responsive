@@ -1,21 +1,120 @@
-@media screen and (min-width:365px) and (max-width:1192px){
+/* Mobile layout */
+@media screen and (max-width: 575px){
+    /* takes away the border, margin, and padding for the whole page */
+    * {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* added padding and margin to resize block, added border, set background color */
+    .alert-info {
+        background-color: lightskyblue;
+        padding: 1em;
+        margin: 1em 0;
+        border: 2px solid lightgray;
+    }
+
+    /* added padding to push the content off the edge of the page */
+    body {
+        padding: 1em;
+    }
+
+    /* centers all the text in the body */
+    body *{
+        text-align: center;
+    }
+
+    /* used padding and margin to separate the list items, set background color, set list style to none to delete bullets*/
+    .nav-links li{
+        list-style: none;
+        background-color: lightgray;
+        padding: 1em;
+        margin: 1em 0;
+    }
+
+    /* set the width of this block to 100% */
+    .header-img {
+       width: 100%;
+    }
+
+    /* set the image to 100% width*/
+    .header-img img {
+        width: 100%;
+    }
+
+    /*  separate the sections using margin*/
+    section {
+        margin: 1em 0;
+    }
+
+    /* align text of all sections to the left and added padding to push content in to space out */
+    section *{
+        text-align: left;
+        padding: .5em 0;
+    }
+
+    /* align text of all footers to the left*/
+    footer *{
+        text-align: left;
+    }
+
+    /* changed the font style to italic */
+    .sub-section {
+        font-style: italic;
+    }
+
+
+}
+/* Desktop layout */
+@media screen and (min-width: 575px) {
+    body {
+        padding: 2em;
+        background-color: white;
+    }
+
+    h1 {
+        float: left;
+    }
+
+    nav {
+        float: right;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    li {
+        padding: 1em;
+        list-style: none;
+    }
+
+    .hidden-on-desktop {
+        display: none;
+    }
+
+    section {
+        float: left;
+        height: 40vh;
+    }
+
+    .main {
+        float: left;
+        width: 60%;
+    }
+
+    .sub-section {
+        float: right;
+        width: 40%;
+    }
+
+
+
 
 }
 
-h1{
-    text-align:center;
-    font-weight: bold;
-}
 
-.nav-links{
-    display: flex;
-    list-style-type: none;
-    flex-direction: column;
-    align-items: center;
 
-}
 
-li{
-    background-color: gray;
-    flex-grow:  ;
-}
+
